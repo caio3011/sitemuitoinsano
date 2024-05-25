@@ -5,10 +5,11 @@
 
     --fundo-menu-lateral: #1a2b2b;
     --fundo-claro: #485F73;
-    --fundo-escuro: #022c02;
+    --fundo-escuro: #042e03;
 
     --texto-claro: #9FBCE0;
     --textos-escuro: #091626;
+    --texto-titulo: #236e21;
 
     --detalhes-claro: #485F73;
     --detalhes-icones: #044638;
@@ -229,4 +230,86 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 /* Css Geral */
-
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {
+    background: var(--detalhes-icones);
+}
+.section-title {
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #0a62a6;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 85px;
+    height: 3px;
+    background: var(--fundo-claro);
+}
+.section-title p {
+    margin-bottom: 0;
+}
+/* sobre */
+.sobre .container h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0a62a6;
+}
+.sobre .container ul {
+    list-style: none;
+    padding: 0;
+}
+.sobre .container ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre .container ul strong {
+    margin-right: 15px;
+}
+.sobre .container ul i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: #0a62a6;
+    line-height: 0;
+}
+/* Conquistas */
+.conquistas {
+    padding-bottom: 30px;
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 45px;
+    color: #0a62a6;
+    float: left;
+    line-height: 0;
+}
+.conquistas .count-box span {
+    font-size: 50px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-claro);
+    margin-left: 60px;
+}
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Helvetica', serif;
+}
+.conquistas .count-box i:hover{
+    color: cyan;
+}
