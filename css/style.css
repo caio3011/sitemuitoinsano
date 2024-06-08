@@ -313,3 +313,34 @@ section {
 .conquistas .count-box i:hover{
     color: cyan;
 }
+/* Skills / Qualidades */
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Open" , sans-serif;
+    color: var(--texto-titulo);
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg {
+    background: var(--fundo-claro);
+    height: 10px;
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 2.5s;
+    background: var(--fundo-escuro);
+
+}
