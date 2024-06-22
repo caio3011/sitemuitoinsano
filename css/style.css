@@ -604,3 +604,113 @@ section {
 .depoimentos .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--textos-escuro);
 }
+/* Contato // Forms */
+.contato {
+    padding-bottom: 130px;
+}
+.contato .info {
+    padding: 30px;
+    background: var(--texto-titulo);
+    width: 100%;
+    box-shadow: 0 0 24 0 rgba(219, 215, 215, 0.495);
+}
+.contato .info i {
+    font-size: 20px;
+    color: var(--texto-claro);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--detalhes-claro);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info h4 {
+    color: var(--textos-escuro);
+    padding: 0 0 0 50px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contato .info p {
+    color: var(--fundo-escuro);
+    font-size: 16px;
+    padding: 0 0 10px 60px;
+    margin-bottom: 30px;
+}
+.contato .info .fone p:hover{
+    color: var(--detalhes-icones);
+}
+/* Forms */
+.contato .email-form {
+    padding: 30px;
+    background: var(--texto-titulo);
+    width: 100%;
+    box-shadow: 0 0 24 0 rgba(219, 215, 215, 0.495);
+}
+.contato .email-form .form-group {
+    padding-bottom: 15px;
+}
+.contato .email-form label {
+    color: var(--textos-escuro);
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.contato .email-form input,
+.contato .email-form textarea {
+    /* border-radius: 0; */
+    box-shadow: none; /* remover sombra */
+    font-size: 16px;
+}
+.contato .email-form input {
+    height: 40px;
+}
+.contato .email-form textarea {
+    padding: 10px 15px;
+}
+.contato .email-form button[type=submit] {
+    background: var(--fundo-claro);
+    color: var(--texto-claro);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 24px;
+    /* width: 70px;
+    height: 30px;   podem ser usados tbm
+    font-size: 18; */
+    transition: 0.4s;
+}
+.contato .email-form button[type=submit]:hover {
+    background: var(--fundo-escuro);
+}
+
+/* back-to-top // Voltar ao topo */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 1;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--texto-titulo);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.back-to-top i {
+    color: var(--textos-escuro);
+    font-size: 30px;
+    line-height: 0;
+}
+.back-to-top:hover {
+    background: var(--texto-claro);
+}
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* --- breadcrumbs ---  */
