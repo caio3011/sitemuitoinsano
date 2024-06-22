@@ -548,8 +548,59 @@ section {
     margin: 10px 0 5px 0;
     color: var(--detalhes-claro);
 }
-.depoimentos . .depoimento-item h4 {
+.depoimentos .depoimento-item h4 {
     font-size: 14px;
     margin: 0;
     color: var(--detalhes-escuro);
+}
+.depoimentos .depoimento-item .quote-left,
+.depoimentos .depoimento-item .quote-right {
+    color: var(--textos-escuro);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-left {
+    display: inline-block;
+    position: relative;
+    left: -5px;
+}
+.depoimentos .depoimento-item .quote-right {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: -5px;
+}
+.depoimentos .depoimento-item p {
+    font-style: italic;
+    color: var(--fundo-escuro);
+    margin: 0 15px 35px 15px;
+    padding: 20px;
+    background: var(--detalhes-claro);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(218, 221, 224, 0.2);
+}
+.depoimentos .depoimento-item p::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--detalhes-claro);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+.depoimentos .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--texto-claro);
+    opacity: 1;
+    border: 1px solid black;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--textos-escuro);
 }
